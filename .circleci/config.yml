@@ -15,3 +15,8 @@ jobs:
         - run: mvn package -s settings.xml
         - run: mvn install -s settings.xml
         - run: mvn deploy -DmuleDeploy -s settings.xml  
+workflows:
+  say-hello-workflow: # This is the name of the workflow, feel free to change it to better match your workflow.
+    # Inside the workflow, you define the jobs you want to run.
+    jobs:
+      - buildAndDeploy
