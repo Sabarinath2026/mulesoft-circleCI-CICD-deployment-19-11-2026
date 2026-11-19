@@ -1,0 +1,16 @@
+<settings>
+	<servers>
+		<server>
+			<id>credentials</id>
+			<username>CH02Student09</username>
+			<!-- Best Practice: Use encrypted passwords rather than plain text -->
+			<password>@Mulesoft2022</password>
+		</server>
+		<server>
+			<id>ConnectedAppcredentials</id>
+			<username>~~~Client~~~</username>
+			<!-- Best Practice: Use encrypted passwords rather than plain text -->
+			<password>b3480cd5b9e1438db6690a20966e229c~?~1154940B69934fE7Bdb993062419c0d7</password>
+		</server>
+	</servers>
+</settings>
