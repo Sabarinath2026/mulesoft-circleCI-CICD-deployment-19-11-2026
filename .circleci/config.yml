@@ -5,7 +5,7 @@ jobs:
   buildAndDeploy:
     docker:
       - image: circleci/openjdk:8-jdk
-     working_directory: ~/repo
+     working_directory: ~/repository
      environments:
      MAVEN_OPTS: Xmx320m
      steps:
