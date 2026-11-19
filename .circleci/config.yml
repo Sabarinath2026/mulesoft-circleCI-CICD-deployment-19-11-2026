@@ -5,13 +5,13 @@ jobs:
   buildAndDeploy:
     docker:
       - image: circleci/openjdk:8-jdk
-     working_directory: ~/repository
-     environments:
-     MAVEN_OPTS: Xmx320m
-     steps:
-     - chekcout
-     - run: mvn clean
-     - run: mvn test -s settings.xml
-     - run: mvn package -s settings.xml
-     - run: mvn install -s settings.xml
-     - run: mvn deploy -DmuleDeploy -s settings.xml  
+    working_directory: ~/repository
+    environments:
+        MAVEN_OPTS: Xmx320m
+    steps:
+        - chekcout
+        - run: mvn clean
+        - run: mvn test -s settings.xml
+        - run: mvn package -s settings.xml
+        - run: mvn install -s settings.xml
+        - run: mvn deploy -DmuleDeploy -s settings.xml  
